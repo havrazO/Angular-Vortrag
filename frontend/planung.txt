@@ -1,0 +1,12 @@
+15 min  Motivation      Havraz
+15 min  Js / Ts         Lasse
+----------------------------
+50 min 
+-10 min Components
+-5  min Modules
+-5  min Services & Dependences injections
+-10 min Databinding 
+-10 min http & Observables
+-05 min Routing
+-05 min Pipes
+----------------------------
