@@ -4,15 +4,15 @@ import model.parser.SymbolParserException;
 
 public class BracketExpr implements Factor {
 	
-	private RegExpr regExpr;
+	private RegExpr expression;
 
 	public BracketExpr(RegExpr regularExpression) {
-		this.regExpr = regularExpression;
+		this.expression = regularExpression;
 	}
 
 	@Override
 	public Integer evaluate() throws SymbolParserException {
-		return this.regExpr.evaluate();
+		return this.expression.evaluate();
 	}
 
 }

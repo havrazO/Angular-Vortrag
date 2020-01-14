@@ -5,18 +5,18 @@ import model.parser.operations.binaryOperations.Multiplication;
 
 public class Product implements Summand {
 
-	private RegExpr summand;
-	private RegExpr factor;
+	private RegExpr arg1;
+	private RegExpr arg2;
 
 	public Product(RegExpr regExpr, RegExpr regExpr2) {
 		super();
-		this.summand = regExpr;
-		this.factor = regExpr2;
+		this.arg1 = regExpr;
+		this.arg2 = regExpr2;
 	}
 
 	@Override
 	public Integer evaluate() throws SymbolParserException {
-		return Multiplication.INSTANCE.calculate(this.summand, this.factor);
+		return Multiplication.INSTANCE.calculate(this.arg1, this.arg2);
 	}
 
 }
