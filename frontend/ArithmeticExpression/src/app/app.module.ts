@@ -8,6 +8,8 @@ import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { MatInputModule } from "@angular/material/input";
 import { MatButtonModule } from "@angular/material/button";
 import { MatCardModule } from "@angular/material/card";
+import { MatProgressSpinnerModule } from "@angular/material/progress-spinner";
+import { MatToolbarModule } from "@angular/material/toolbar";
 
 @NgModule({
   declarations: [AppComponent],
@@ -18,7 +20,9 @@ import { MatCardModule } from "@angular/material/card";
     ReactiveFormsModule,
     MatInputModule,
     MatButtonModule,
-    MatCardModule
+    MatCardModule,
+    MatProgressSpinnerModule,
+    MatToolbarModule
   ],
   providers: [],
   bootstrap: [AppComponent]

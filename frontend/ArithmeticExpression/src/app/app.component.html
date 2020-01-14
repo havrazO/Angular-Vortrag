@@ -1,32 +1,28 @@
+<mat-toolbar color="primary"><span>Arithmetric Expressions</span></mat-toolbar>
 <div class="container">
+  <h3>Calculate your favorite Arithmetric Expressions</h3>
   <mat-form-field class="item">
     <input
       matInput
       [formControl]="expression"
       placeholder="Arithmetric Expression"
+      [errorStateMatcher]="matcher"
     />
     <mat-hint>For Example 5+3</mat-hint>
     <mat-error>{{ expression.getError("error") }}</mat-error>
   </mat-form-field>
-  <button
-    class="item"
-    mat-raised-button
-    color="primary"
-    (click)="calculate(expression.value)"
-  >
-    Calculate
-  </button>
-  <mat-card class="item" *ngIf="result && expression.valid">
+  <mat-card class="item" *ngIf="calculateEntity$ | async as calculateEntity">
     <mat-card-header>
       <mat-card-title>
-        {{ result.value }}
+        {{ calculateEntity.result }}
       </mat-card-title>
       <mat-card-subtitle>
-        {{ result.expression }}
+        {{ calculateEntity.message }}
       </mat-card-subtitle>
     </mat-card-header>
     <mat-card-content>
-      TODO Tree
+      {{ calculateEntity.resultTree | json }}
     </mat-card-content>
   </mat-card>
+  <mat-spinner *ngIf="loading" color="primary"></mat-spinner>
 </div>
