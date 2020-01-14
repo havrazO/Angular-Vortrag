@@ -1,0 +1,10 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  margin: auto 25%;
+}
+
+.item {
+  margin: 1rem;
+}
