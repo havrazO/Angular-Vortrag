@@ -2,15 +2,15 @@
 15 min  Js / Ts         Lasse
 ----------------------------
 50 min 
--10 min Components
--5  min Modules
--5  min Services & Dependences injections
--10 min Databinding 
--10 min http & Observables
--05 min Routing
--05 min Pipes
+-10 min Components                              Lasse
+-05 min Modules                                 Havraz
+-05 min Services & Dependences injections       Robert
+-10 min Databinding                             Havraz
+-10 min http & Observables                      Robert
+-05 min Routing                                 Lasse
+-05 min Pipes                                   Pipes
 ----------------------------
 
--05 min backend (jax-rs)
+-05 min backend (jax-rs)                        Robert
 -05 min Live Demo
 -05 min fragen
