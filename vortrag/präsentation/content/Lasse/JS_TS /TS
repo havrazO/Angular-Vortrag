@@ -11,8 +11,8 @@ zugewiesen war kann gleich schon den Wert einer Nummer haben.
 
 Das funktioniert nicht in Typescript. In Typescript würden sie hier einen Fehler erhalten und können daher viel robusteren Code
 schreiben, der schon zum Zeitpunkt des Schreibens überprüft wird. 
-Vanilla JavaScript wird erst zu dem Zeitpunkt überprüft zu dem er es ausgeführt wird. Also haben wir an dieser Stelle schon einmal eine
-großartige Verbesserung.
+Vanilla JavaScript wird erst zu dem Zeitpunkt überprüft zu dem er es ausgeführt wird. Also haben wir an dieser Stelle schon 
+einmal eine großartige Verbesserung.
 
 Typescript wird allerdings nicht im Browser ausgeführt sondern unser CLI (Command Line Interface) kompiliert für uns unseren 
 Typescript Code in Vanilla JavaScript Code welcher dann im Browser ausgeführt werden kann.
@@ -21,6 +21,8 @@ Warum schreiben wir unseren Code nicht gleich in Vanilla JavaScript fragen sich 
 Technisch ist das vielleicht möglich, aber wir würden uns damit keinen Gefallen tun.
 Viele der features die Typesscript sind notwendig um mit Angular überhaupt zu arbeiten zu können, also Angular ohne Typescript 
 zu benutzen wäre sicherlich nicht sinnvoll. 
+
+________________________________________________________________________________________________________________________________
 
 Drei Aspekte von Typescript helfen uns beim programmieren in Angular.
 Den ersten haben wir bereits kennengelernt, man nennt sie Type annotations. Diese helfen uns beim typisieren unserer Variablen 
