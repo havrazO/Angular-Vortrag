@@ -1,0 +1,2 @@
+based on 
+https://angular.io/guide/architecture-modules

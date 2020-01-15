@@ -1,0 +1,54 @@
+https://www.tiq-solutions.de/einstieg-in-angular/
+
+# Einstieg in Angular leicht gemacht!
+...
+
+--------------------------------------------------------
+https://www.sitepoint.com/angular-introduction/
+
+# Warum brauche ich ein Framework?
+
+Wenn Sie sich nicht sicher sind, was ein JavaScript (oder client-seitiges) Framework ist, 
+Ist das eine Technologie, die uns die richtigen Werkzeuge zur Verfügung stellt,
+um eine Webanwendung zu erstellen und gleichzeitig zu definieren,
+wie sie gestaltet und der Code organisiert werden soll.
+
+Die meisten JS-Frameworks sind heutzutage rechthaberisch,
+d.h. sie haben ihre eigene Philosophie, wie die Webanwendung erstellt werden sollte,
+und Sie müssen vielleicht etwas Zeit aufwenden, um die Kernkonzepte zu erlernen.
+Andere Lösungen, wie z.B. Backbone, lehren die Entwickler nicht,
+wie sie das Projekt erstellen sollten, daher nennen einige Leute solche Technologien einfach nur Bibliotheken, anstatt Frameworks.
+
+früher wurden Websites mit schlecht strukturiertem JS-Code (in vielen Fällen mit jQuery) erstellt.
+Allerdings sind die clientseitigen UIs immer komplexer geworden,
+und JavaScript hat seinen Ruf als "Spielzeug"-Sprache verloren.
+Moderne Webseiten sind stark auf JS angewiesen und die Notwendigkeit,
+den Code richtig zu organisieren (und zu testen!), ist entstanden.
+Daher sind Client-seitige Frameworks populär geworden und heutzutage gibt es mindestens ein Dutzend von ihnen.
+
+--------------------------------------------------------
+https://www.tiq-solutions.de/einstieg-in-angular/
+
+Was eigentlich ist Angular und wie hat es sich entwickelt?
+
+
+--------------------------------------------------------
+
+https://www.sitepoint.com/angular-introduction/
+
+
+Die Vorteile der Angular
+
+Warum also "Angular"? Nun, weil es auf verschiedenen Plattformen unterstützt wird (Web, Mobile, nativer Desktop), es ist leistungsstark, modern, hat ein schönes Ökosystem und ist einfach cool. Nicht überzeugt? Dann lass mich ein bisschen eloquenter sein:
+
+Angular präsentiert Ihnen nicht nur die Werkzeuge, sondern auch Design Patterns, um Ihr Projekt wartungsfreundlich zu gestalten. Wenn eine Angular-Anwendung richtig gestaltet ist, endet man nicht mit einem Gewirr von Klassen und Methoden, die schwer zu modifizieren und noch schwieriger zu testen sind. Der Code ist bequem strukturiert und Sie müssen nicht viel Zeit aufwenden, um zu verstehen, was vor sich geht.
+Es ist zwar JavaScript, aber besser. Angular wird mit TypeScript erstellt, das wiederum auf JS ES6 basiert. Sie brauchen keine völlig neue Sprache zu lernen, aber Sie erhalten trotzdem Funktionen wie statische Typisierung, Interfaces, Klassen, Namespaces, Dekoratoren etc.
+Sie brauchen das Fahrrad nicht neu zu erfinden. Mit Angular haben Sie bereits eine Menge Werkzeuge, um sofort mit der Erstellung der Anwendung zu beginnen. Sie haben Direktiven, um HTML-Elementen ein dynamisches Verhalten zu verleihen. Sie können die Formulare mit FormControl hochfahren und verschiedene Validierungsregeln einführen. Sie können ganz einfach asynchrone HTTP-Anfragen verschiedener Typen senden. Sie können das Routing mit wenig Aufwand einrichten. Und es gibt noch viele weitere Goodies, die Angular uns anbieten kann!
+Die Komponenten sind entkoppelt. Angular ist bestrebt, die enge Kopplung zwischen verschiedenen Komponenten der Anwendung aufzuheben. Die Einspritzung erfolgt im NodeJS-Stil und Sie können verschiedene Komponenten mit Leichtigkeit austauschen.
+Alle DOM-Manipulationen finden dort statt, wo sie stattfinden sollen. Mit Angular koppeln Sie die Präsentation und die Logik der Anwendung nicht eng miteinander, wodurch Ihr Markup viel sauberer und einfacher wird.
+Das Testen ist das Herzstück. Angular ist dafür gedacht, gründlich getestet zu werden und unterstützt sowohl Unit- als auch End-to-End-Tests mit Tools wie Jasmine und Protractor.
+Angular ist mobil und desktop-ready, d.h. Sie haben ein Framework für mehrere Plattformen.
+Angular wird aktiv gewartet und verfügt über eine große Community und ein großes Ökosystem. Sie können viele Materialien zu diesem Framework sowie viele nützliche Tools von Drittanbietern finden.
+
+Wir können also sagen, dass Angular nicht nur ein Framework ist, sondern vielmehr eine Plattform, die es Entwicklern ermöglicht, Anwendungen für das Web, für mobile Geräte und für den Desktop zu erstellen. In diesem Handbuch erfahren Sie mehr über seine Architektur.
+
