@@ -1,0 +1,13 @@
+JS:
+https://javascript.info/intro | 10 min 
+
+
+TS: 
+| 5 min
+
+Components:
+| 10 min
+
+
+Routing:
+| 5 min
