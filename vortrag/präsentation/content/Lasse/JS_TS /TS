@@ -1,17 +1,17 @@
 Typescript | 5 min
 
 
-Typescript ist ein Superset für JS und fügt weitere features, wie zum beispiel Klassen, Schnittstellen und (feste) Datentypen zu Vanilla JS hinzu.
-Typescript ermöglicht es uns einer Variable zu sagen von was für einem Datentyp sie ist.
-
+Typescript ist ein Superset für JS und fügt weitere features, wie zum beispiel Klassen, Schnittstellen und (feste) Datentypen 
+zu Vanilla JS hinzu. Typescript ermöglicht es uns einer Variable zu sagen von was für einem Datentyp sie ist.
+ 
 let alter: number = 12;
 
 Das funktioniert nicht in Vanilla JavaScript denn dort haben wir dynamische Datentypen eine Variable die eben noch einem String
 zugewiesen war kann gleich schon den Wert einer Nummer haben.
 
 Das funktioniert nicht in Typescript. In Typescript würden sie hier einen Fehler erhalten und können daher viel robusteren Code
-schreiben, der zum Zeitpunktdes Schreibens überprüft wird. 
-Vanilla JavaScript wird erst zu dem Zeitpunkt überprüft an dem Sie es ausführen also haben wir an dieser Stelle schon einmal eine
+schreiben, der schon zum Zeitpunkt des Schreibens überprüft wird. 
+Vanilla JavaScript wird erst zu dem Zeitpunkt überprüft zu dem er es ausgeführt wird. Also haben wir an dieser Stelle schon einmal eine
 großartige Verbesserung.
 
 Typescript wird allerdings nicht im Browser ausgeführt sondern unser CLI (Command Line Interface) kompiliert für uns unseren 
@@ -19,43 +19,31 @@ Typescript Code in Vanilla JavaScript Code welcher dann im Browser ausgeführt w
 
 Warum schreiben wir unseren Code nicht gleich in Vanilla JavaScript fragen sich jetzt sicherlich manche? 
 Technisch ist das vielleicht möglich, aber wir würden uns damit keinen Gefallen tun.
-Viele der 
+Viele der features die Typesscript sind notwendig um mit Angular überhaupt zu arbeiten zu können, also Angular ohne Typescript 
+zu benutzen wäre sicherlich nicht sinnvoll. 
+
+Drei Aspekte von Typescript helfen uns beim programmieren in Angular.
+Den ersten haben wir bereits kennengelernt, man nennt sie Type annotations. Diese helfen uns beim typisieren unserer Variablen 
+wodurch wir saubereren und robusteren Code schreiben.
+
+Der zweite Aspekt mit dem uns Typescript unter die Arme greift sind die Schnittstellen oder auch Interfaces auf Englisch.
+Allerdings sind es nicht die gleichen Interfaces die wir von Java kennen. 
+Diese Interfaces benutzen wir um JSON-Objekte zu typisieren. 
+
+interface Person {
+    firstName: string;
+    lastName: string;
+}
+
+let user: Person = { 
+    firstName: "Jane",
+    lastName: "User" 
+};
+
+Zu guter letzt gibt uns Typescript die Möglichkeit objektorientiert zu programmieren indem wir Klassen erstellen können die
+grundsätzlich genauso funktionieren wie die Klassen in Java. 
 
 
 
 
 
-
-
-
-
-
-Viele der Funktionen gibt es eigentlich nur in Typescript, und Angular soll zusammen mit Typescript verwendet werden.
-
-Davon abgesehen, müssen Sie für diesen Kurs kein
-
-Typoskript lernen.
-
-Sie sollten es unterwegs abholen können.
-
-Ich habe einen ganzen Abschnitt, der am Ende dieses Kurses eine kurze Einführung
-
-in Typescript bietet.
-
-Gehen Sie diesen Abschnitt jetzt durch, wenn Sie das Gefühl
-
-haben, dass Sie es brauchen, oder wenn Sie das Gefühl haben, dass Sie während des gesamten Kurses tiefer in einige der
-
-Funktionen, die Sie dort sehen, eintauchen
-
-sollten, und dass Sie in Ordnung sein sollten .
-
-Wenn Sie Lust haben, können Sie natürlich einen anderen Kurs oder ein anderes Tutorial mit TypScript beginnen, damit
-
-Sie etwas zu
-
-sehen haben, wenn in diesem Kurs etwas unklar ist. Im Allgemeinen ist Typescript jedoch eine Ergänzung zu JavaScript.
-
-kein kompletter Ersatz,
-
-daher werden viele Befehle sehr vertraut aussehen.
