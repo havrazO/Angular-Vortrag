@@ -2,7 +2,7 @@ JavaScript | 10 min | https://javascript.info/intro
 
 Überblick:
 
-JavaScript wurde 1995 erstmals verwendet umn die ersten Websiten "zum Leben zu erwecken". 
+JavaScript wurde 1995 erstmals verwendet um die ersten Websiten "zum Leben zu erwecken". 
 JS Anwendungen nennt man auch Skripte, diese Skripte können innerhalb von HTML Dateien geschrieben werden und beim Laden
 der HTML-Datei wird dieser Code dann ausgeführt.
 

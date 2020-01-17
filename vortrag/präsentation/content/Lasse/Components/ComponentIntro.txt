@@ -1,7 +1,8 @@
 Component: 
 
 Components sind die Hauptbausteine aus denen die Benutzeroberfläche einer Angular App besteht. Eine App besteht aus einem Baum 
-von Components. Die Wurzel dieses Baumes ist die AppComponent.
+von Components. Die Wurzel dieses Baumes ist die AppComponent, hier ist der Einstiegspunkt in unserer Anwendung.
+
 Ein Component muss zu einem NgModule gehören, um für andere Components oder Anwendungen zur Verfügung zu stehen.
 Um ein Component zu einem NgModule hinzuzufügen musst man in der Datei app.module.ts den Component in den "declarations" der
 META-Daten des NgModules hinzuzufügen. 
@@ -11,11 +12,12 @@ Nun schauen wir uns mal Components am Beispiel des AppComponents an.
 Ein Component besteht meistens aus drei bis vier verschiedenen Dateien. 
 Diese können manuell erstellt werden oder über das CLI (Command Line Interface) generiert werden.
 
->>ng generate component UserComponent<<
+Befehl zum generieren eines Components:
+ng generate component UserComponent
 
 
 
-Die erste der drei ist die "app.component.ts".
+Die erste Teil des Components ist die "app.component.ts" Datei.
 Sie enthält den Typescript Code des Components und ist für die Funktionalität zuständig.
 
 _____________________________________________________________________________________________________________________________
@@ -28,13 +30,15 @@ import { Component } from "@angular/core";
 
 _____________________________________________________________________________________________________________________________
 
-Der '@Component' Decorator
+Den '@Component' Decorator
 Er enthält META Daten über den Component die zur Konfiguration benötigt werden und festlegen wie sich der Component zur Laufzeit
 verhalten soll. Nach dem generieren enthält dieser drei Attribute:
 
 -selector: Dieses Attribut definiert unter welchem Namen der Component später im HTML Code eingebettet werden kann. 
+
 -templateUrl: gibt den Pfad zum HTML-Template des Components an.
--styleUrl: gibt den Pfas zu CSS-Datei des Components an.
+
+-styleUrl: gibt den Pfad zu CSS-Datei des Components an.
 
 Neben diesen drei können aber optionsl auch noch andere Attribute übergeben
 
@@ -46,7 +50,9 @@ Neben diesen drei können aber optionsl auch noch andere Attribute übergeben
 
 _____________________________________________________________________________________________________________________________
 
-Zu guter letzt noch die Klasse des eigenlichen Components. Hier ist die Funktionalität definiert.
+Zu guter letzt noch die Klasse des eigenlichen Components. Hier sind können Funktionen definiert werden.
+
+//** @Havraz & Robert: Hier fehlt mir noch ein bisschen was, könnt ihr mir vielleicht weiterhelfen was ich hierzu noch sagen könnte? **//
 
 export class AppComponent {
 
@@ -61,3 +67,8 @@ export class AppComponent {
 
 
 }
+
+_____________________________________________________________________________________________________________________________
+
+
+In der Datei "app.component.html" wird das Template des Components definiert.
