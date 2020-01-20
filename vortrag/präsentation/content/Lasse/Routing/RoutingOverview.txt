@@ -1,0 +1,8 @@
+Überblick:
+
+Der Angular Router hat prinzipiell die gleichen Features wie ein normaler Browser.
+-durch eingeben einer URL in der Adressleiste kann zur gewünschten Seite navigiert werden. 
+-durch einen Klick auf einen Link wird man zur entsprechend hinterlegten Seite navigiert.
+-durch Klicken der Vor- und Zurück- Buttons oben Links im Browser kann man in der Historie der zuletzt besuchten Seiten navigieren.
+
+Der Vorteil vom Angular Router gegenüber der Navigation von "normalen" Internetseiten ist, dass beim Laden einer neuen Seite 

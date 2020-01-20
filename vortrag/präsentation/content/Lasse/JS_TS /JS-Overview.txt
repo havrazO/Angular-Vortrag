@@ -1,0 +1,49 @@
+JavaScript | 10 min | https://javascript.info/intro
+
+Überblick:
+
+JavaScript wurde 1995 erstmals verwendet umn die ersten Websiten "zum Leben zu erwecken". 
+JS Anwendungen nennt man auch Skripte, diese Skripte können innerhalb von HTML Dateien geschrieben werden und beim Laden
+der HTML-Datei wird dieser Code dann ausgeführt.
+
+JavaScript hat keinen Bezug zu Java. Es hat "Java" nur im Namen weil zur Zeit als JS erfunden wurde Java eine sehr 
+beliebte Programmiersprache war und man durch das "Java" im Namen gehofft hat im Erfolg von Java mitzuschwimmen.
+Mittlerweile ist JavaScript unter dem Namen ECMAScript bekannt, es ist eine komplet eigene Programmiersprache, 
+die nicht nur im Browser sondern auch auf Servern oder anderen Geräten ausgeführt werden kann welche eine 
+JavaScript engine besitzten.
+
+_________________________________________________________________________________________________________________________
+
+
+Was kann JS im Browser?:
+
+JS kann neue HTML-Elemete der Seite hinzufügen, den bisherigen Inhalt verändern oder das Aussehen des Inhalts oder
+der Componenten verändern.
+Außerdem lässt sich dank JS auf Interaktionen der Anwender reagieren wie zb: Maus klicks, oder Tastatur Eingaben.
+Man kann über das Netzwerk anfragen zum hoch- und herunterladen von Dateien an einen Remote-Server senden.(AJAX oder COMET)
+Weitere Features sind das setzten und lesen von Cookies, das Stellen von Fragen und das Anzeigen von Nachrichten für den Anwender.
+
+_________________________________________________________________________________________________________________________
+
+
+Was kann JS NICHT im Browser?:
+
+Die Möglichkeiten von JS im Browser sind zu gunsten der Sicherheit der Anwender nur begrenzt.
+
+JS hat keine Zugriff auf die Festplatte und das Betriebssystem.
+Außerdem wissen die verschiedenen Tabs oder Fenster nichts über die jeweils anderen die im Browser geöffnet sind.
+JS kann mit dem Server der Domain die gerade aufgerufen ist kommunizieren aber es hat keine Möglichkeit mit anderen Domains
+zu kommunizieren.
+
+
+_________________________________________________________________________________________________________________________
+
+
+Was macht JS einzigartig?
+
+-die volle Integration von HTML und CSS
+-einfache Sachen werden auch einfach gehalten
+-es wird von allen großen Browsern unterstützt
+
+Das am weitesten verbreitete Werkzeug um Browser Oberflächen zu bearbeiten.
+Zusätzlich läuft JS auch auf Servern und mobilen Endgeräten. 

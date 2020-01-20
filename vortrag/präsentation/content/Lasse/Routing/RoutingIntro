@@ -1,0 +1,68 @@
+
+Wie verwende ich den Angular Router?
+
+Für deinen Angular Router musst du zunächst festlegen über welche Route welcher Componenent geladen werden soll.
+Du hast einerseits die Möglichkeit beim genrieren deiner Anwendung direkt einen Routing Component mit zu generieren.
+Die andere Möglichkeit ist es deine Routes in der app.modules.ts Datei zu definieren. 
+Zusätzlich müssen die Routes und das RouterModule importiert werden 
+
+
+
+import { Routes, RouterModule } from '@angular/core';
+
+const appRoutes: Routes = [
+    { path: '', component: HomeComponent},
+    { path: 'users', component: UsersComponent },
+    { path: '**', component: ErrorComponent }
+];
+
+@NgModule({
+    ...
+    ...
+    imports:[
+        ...
+        RouterModule.forRoot(appRoutes),
+        ...
+    ]
+})
+
+Jetzt fehlen noch zwei Punkte: 
+
+1. Wir müssen Angular sagen wo unsere Routen geladen werden sollen. 
+
+Um dies festzulegen müssen wir den <router-outlet>-Tag in unserer HTML Datei der App platzieren. 
+
+2. Wir müssen die Links die zu unseren Components führen in den ensprechenden HTML Elementen
+als Attribute hinterlegen. 
+
+ 
+
+<h1>Angular Router</h1>
+    <nav>
+        <a routerLink="" >Home</a>
+        <a routerLink="users" >Users</a>
+    </nav>
+<router-outlet></router-outlet>
+
+
+_______________________________________________________________________________________________________________
+
+
+Parameter über die Routen übergeben: 
+
+Das übergeben der Parameter im Pfad der Route ist simple. Man fügt in der Route einfach einen ":" ein hinter den man dann
+den Namen des Attributes schreibt. In dem folgenden Beispiel wollen wir eine ID in der Route mit übergeben.
+
+{ path:'users/:id', component: UsersComponent }
+
+Parameter aus Routen auslesen:
+
+Um die Parameter aus den Routen in den ensprechenden Componenents wieder auszulesen muss der Service 'ActivatedRoute' zunächst 
+im constructor injected werden. 
+
+constructor( private route: ActivatedRoute){}
+
+Um nun zum Beispiel die ID einer Variablen zuzuordnen muss folgendes getan werden:
+
+let id: number = this.route.snapshot.params['id'];
+

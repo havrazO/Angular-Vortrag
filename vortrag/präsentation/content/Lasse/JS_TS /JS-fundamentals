@@ -1,0 +1,145 @@
+Der Skript Tag:
+
+Mithilfe des "<script>"-Tags kann JS Code ganz einfach innerhalb von HTML Dateien geschrieben werden.
+
+<!DOCTYPE HTML>
+<html>
+
+<body>
+
+  <p>Before the script...</p>
+
+  <script>
+    alert( 'Hello, world!' );
+  </script>
+
+  <p>...After the script.</p>
+
+</body>
+
+</html>
+
+________________________________________________________________________________________________________________________________
+
+
+Externe Skripte:
+
+Mithilfe des src Attributs kann an den "<script>"-Tag ein Path weitergegeben werden. Dieser Path führt zu einer externen 
+Datei in der der JS Code steht der ausgeführt werden soll beim laden der HTML Datei.
+
+
+________________________________________________________________________________________________________________________________
+
+
+Datentypen:
+
+Deklarieren tut man Variablen in JS mithilfe des "let" Befehls.
+Will man eine Konstante deklarieren benutzt man den Befehl: "const".
+
+Eine Variable in JS ist nicht an einen bestimmten Datentyp gebunden.
+
+// kein Fehler
+let nachricht = "trivial";
+nachricht = 1337;
+
+
+Beim rechnen mit JS kann man nichts großartig falsch machen. Wie meine ich das? 
+Ganz einfach es ist nicht möglich durch mathematische Operationen wie zb das Teilen durch 0 einen Error im Skript zu erzeugen.
+Das schlimmste was passieren kann ist, dass man als Ergebnis der Operation "NaN" zurückgeliefert bekommt. 
+"NaN" steht für "Not a number" 
+
+"number" ist der Standartdatentyp für Zahlen er kann Zahlen zwischen -2^53 und 2^53 annehmen. 
+
+Für Zahlen die großer sind und mithilfe von "number nicht dargestellt werden können gibt es den Datentyp "bigInt" 
+"bigInt" wird in der Kryptografie oder auch für sehr präzise Timestamps genutzt.
+Ein "bigInt" wird erstellt indem man an das Ende des Wertes des Variable ein "n" hängt.
+
+// the "n" at the end means it's a BigInt
+const bigInt = 1234567890123456789012345678901234567890n;
+
+Strings:
+
+Um einen String zu kennzeichnen gibt es in JS drei verschiedene Arten.
+
+let str = "Hallo FHDW!";
+let str2 = 'So kann man das auch machen';
+let satz = `kann weiteren string enthalten ${str}`;
+
+Mithilfe der "Backticks" können Variablen in Strings eingefügt werden. Das funktioniert einfach indem man ein $ und direkt danach
+in geschweifte Klammern die Variable schreibt. // <- Können hier auch Funktionen ausgeführt werden?
+
+weitere primitive Datentypen:
+
+boolean
+null
+undefined
+object -> JSON
+symbol
+
+Der "typeof()" Operator returnt einen String mit dem Namen des Datentyps. 
+
+________________________________________________________________________________________________________________________________
+
+JSON:
+
+JSON steht für die JavaScript Object Notation.
+
+Bei JSON handelt es sich um ein Textformat das komplett unabhängig von Programmiersprachen ist. 
+
+Nach diesem Textformat ist auch der primitive Datentyp "object" aufgebaut. In einem object kann nicht wie in anderen primitiven
+Datentypen nur ein Wert gespeichert werden, denn die JavaScript Object Notation ermöglicht das Speichern mehrer Variablen in 
+einem Objekt. Jede Variable in einem Objekt hat einen eigenen Schlüssel über den man die Variable verändern oder auslesen kann.
+
+let student = {     // ein Objekt
+  name: "John",  // Schlüssel: "name" Wert: "Max"
+  alter: 30        // Schlüssel: "alter" Wert: "30"
+};
+
+________________________________________________________________________________________________________________________________
+
+
+Funktionen:
+
+Funktionen sind das gleiche wie in Java Operationen. Sie werden mit dem Wort function deklariert.
+
+function getName(student) {
+    return student.name;
+}
+
+
+Arrow functions:
+
+Wir haben uns vor kurzem in der Vorlesung erst mit Lambda-Ausdrücken beschäftigt. Diese helfen uns unseren Code einfacher und 
+übersichtlicher zu gestalten. 
+
+In JS gibt es diese auch unter dem Namen Arrow functions, der Name kommt von dem Pfeil welcher benutzt wird um diese Funktionen 
+einzuleiten. Im Gegensatz zu Java sieht der Pfeil ein wenig anders aus aber ansonsten sind sie von der Funktionalität gleich.
+
+Arrow function:
+let sum = (a, b) => a + b;
+
+normale Funktion:
+let sum = function(a, b) {
+  return a + b;
+};
+
+Wenn man eine Arrow function mit mehr als einer Zeile Code schreiben möchte leitet man dies ganz einfach mit geschweiften 
+Klammern ein.
+
+let sum = (a, b) => {  
+  let result = a + b;
+  return result; // Wenn wir die geschweiften Klammern benutzen müssen wir aber darauf achten das wir (falls erforderlich) 
+                // den Wert auch wieder returnen.
+};
+
+
+
+
+
+
+
+
+
+
+
+
