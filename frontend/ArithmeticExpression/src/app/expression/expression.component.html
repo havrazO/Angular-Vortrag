@@ -1,0 +1,19 @@
+<div class="container">
+  <mat-form-field class="item">
+    <input
+      matInput
+      [formControl]="expression"
+      placeholder="Enter an Arithmetic Expression"
+      [errorStateMatcher]="matcher"
+    />
+    <mat-hint>For Example 5+3</mat-hint>
+    <mat-error>{{ expression.getError("error") }}</mat-error>
+  </mat-form-field>
+  <app-expression-result
+    [calculateEntity]="calculateEntity"
+    class="item margin-top-2rem"
+  >
+  </app-expression-result>
+  <mat-spinner class="margin-top-2rem" *ngIf="loading" color="primary">
+  </mat-spinner>
+</div>
