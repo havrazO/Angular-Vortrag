@@ -52,3 +52,7 @@ Angular wird aktiv gewartet und verfügt über eine große Community und ein gro
 
 Wir können also sagen, dass Angular nicht nur ein Framework ist, sondern vielmehr eine Plattform, die es Entwicklern ermöglicht, Anwendungen für das Web, für mobile Geräte und für den Desktop zu erstellen. In diesem Handbuch erfahren Sie mehr über seine Architektur.
 
+
+--------------------------------------------------------
+
+https://www.ngdevelop.tech/angular/angular-basics/
