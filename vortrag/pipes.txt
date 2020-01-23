@@ -1,0 +1,5 @@
+- transformieren displayvalues von objekten: zb. DollarPipe: 3 (number in component) -> CurrencyPipe"dollar" -> 3$ in view
+- eingebaute pipes: DatePipe, UpperCasePipe, LowerCasePipe, CurrencyPipe, PercentPipe...
+- pipes kann man verketten
+- custom pipes mit pipeTransform interface
+- (change detection, wenn zeit)

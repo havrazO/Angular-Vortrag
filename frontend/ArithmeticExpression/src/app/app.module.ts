@@ -10,9 +10,21 @@ import { MatButtonModule } from "@angular/material/button";
 import { MatCardModule } from "@angular/material/card";
 import { MatProgressSpinnerModule } from "@angular/material/progress-spinner";
 import { MatToolbarModule } from "@angular/material/toolbar";
+import { MatTreeModule } from "@angular/material/tree";
+import { MatIconModule } from "@angular/material/icon";
+import { ExpressionTreeComponent } from "./expression-tree/expression-tree.component";
+import { HeaderComponent } from "./header/header.component";
+import { ExpressionComponent } from "./expression/expression.component";
+import { ExpressionResultComponent } from "./expression-result/expression-result.component";
 
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [
+    AppComponent,
+    ExpressionTreeComponent,
+    HeaderComponent,
+    ExpressionComponent,
+    ExpressionResultComponent
+  ],
   imports: [
     BrowserModule,
     HttpClientModule,
@@ -22,7 +34,9 @@ import { MatToolbarModule } from "@angular/material/toolbar";
     MatButtonModule,
     MatCardModule,
     MatProgressSpinnerModule,
-    MatToolbarModule
+    MatToolbarModule,
+    MatTreeModule,
+    MatIconModule
   ],
   providers: [],
   bootstrap: [AppComponent]

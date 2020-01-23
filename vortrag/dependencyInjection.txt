@@ -1,0 +1,7 @@
+- Angular hat eigenes DI framework
+- Services haben kein template
+- DI ist ein design pattern, wo klassen nach externen Abhängigkeiten fragen, statt sie selber zu erstellen.
+- Service Provider @Injectable, @NgModule(), @Component()
+- Services sind singletons innerhalb ihres scopes
+- Services werden in constructors injected
+- Bsp: AppService (Name, configService(nested), ...), httpService, DataService, Statemanagement

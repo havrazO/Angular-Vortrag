@@ -1,0 +1,14 @@
+<mat-card *ngIf="calculateEntity">
+  <mat-card-header>
+    <mat-card-title>
+      {{ calculateEntity.result }}
+    </mat-card-title>
+    <mat-card-subtitle>
+      {{ calculateEntity.message }}
+    </mat-card-subtitle>
+  </mat-card-header>
+  <mat-card-content>
+    <app-expression-tree [expression]="calculateEntity.resultTree">
+    </app-expression-tree>
+  </mat-card-content>
+</mat-card>

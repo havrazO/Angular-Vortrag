@@ -1,6 +1,6 @@
 import { Injectable } from "@angular/core";
 import { HttpClient, HttpHeaders } from "@angular/common/http";
-import { Observable } from "rxjs";
+import { Observable, empty } from "rxjs";
 import { CalculateEntity } from "src/model/calculateEntity";
 
 @Injectable({
@@ -8,7 +8,7 @@ import { CalculateEntity } from "src/model/calculateEntity";
 })
 export class CalculateService {
   private ressource: string =
-    "http://localhost:8080/ArithmeticExpression/calculate";
+    "http://localhost:8080/ArithmetricExpressions/calculate";
 
   private httpOptions = {
     headers: new HttpHeaders({
@@ -19,10 +19,12 @@ export class CalculateService {
   constructor(private httpClient: HttpClient) {}
 
   public calculateExpression(expression: string): Observable<CalculateEntity> {
-    return this.httpClient.post<CalculateEntity>(
-      this.ressource,
-      expression,
-      this.httpOptions
-    );
+    return expression
+      ? this.httpClient.post<CalculateEntity>(
+          this.ressource,
+          expression,
+          this.httpOptions
+        )
+      : empty();
   }
 }

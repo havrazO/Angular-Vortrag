@@ -1,0 +1,4 @@
+- Angular nutzt die Bibliothek RxJS für reactive programming
+- httpClient kapselt http kommunikationen, nutzt dafür RxJS (wegen asyncron)
+- alle http Verben vorhanden
+- Generisch: zb. http.get<MyInterface>(someRessource, httpOptions(headers,...))
